@@ -1,0 +1,921 @@
+/* common style part ..................................................... */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.b1, .b3, .b4, .bContact {
+    background-color: rgb(2, 2, 2);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* navigation bar ....................................................... */
+.cstag {
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    position: fixed;
+    top: 30px;
+    left: 70px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.upperdiv {
+    position: fixed;
+    top: 10px;
+    left: 12px;
+    right: 0;
+    background-color: #232222;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 16px 16px 16px 16px;
+    padding: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li {
+    filter: brightness(0.7);
+    font-size: 15.5px;
+    padding: 5px 10px;
+}
+
+.menu li:hover {
+    filter: brightness(1.5);
+}
+
+nav a.active {
+    border-bottom: 2.8px solid white;
+}
+
+.dtalk {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0.9px solid rgb(254, 188, 188);
+    padding: 12px 20px;
+    border-radius: 60px;
+    font-size: 14.5px;
+    font-weight: 549;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+    margin-right: 15px;
+}
+
+.dtalk:hover {
+    transform: scale(1.04);
+}
+
+/* index.html page(home)  */
+.myContent {
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: clamp(32px, 6vw, 88px);
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    margin-bottom: 20px;
+}
+
+.tagline {
+    color: rgb(188, 188, 188);
+    font-size: clamp(18px, 3vw, 31px);
+    margin-bottom: 20px;
+}
+
+.details {
+    color: rgb(164, 164, 164);
+    font-size: clamp(14px, 2vw, 18px);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.span {
+    display: block;
+    margin-top: 10px;
+}
+
+.cta-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    margin-top: 10px;
+}
+
+.db1, .db2{
+    padding: 18px 30px;
+    border-radius: 60px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 180px;
+}
+
+.db1 {
+    background-color: white;
+    color: black;
+    border: 2.1px solid black;
+}
+
+.db2 {
+    background-color: black;
+    color: white;
+    border: 2.1px solid white;
+}
+
+.db1:hover,.db2:hover {
+    transform: scale(1.04);
+}
+
+.social_links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.social_links a{
+    text-decoration: none;
+}
+.githubl,.outimg {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0.7);
+    transition: all 0.3s ease;
+}
+
+.githubl:hover,.outimg:hover {
+    transform: translateY(-8px);
+    filter: brightness(2.5);
+}
+
+.lindiv {
+    border: 2px solid white;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 7px;
+    filter: brightness(0.7);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lindiv:hover {
+    transform: translateY(-8px);
+    filter: brightness(2.0);
+}
+
+.linpara {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* about.html(about page) .......................................................*/
+.about_header {
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pAbout {
+    font-size: clamp(36px, 6vw, 62px);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pAboutMe {
+    color: rgb(189, 188, 188);
+    font-size: clamp(14px, 2vw, 19px);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.about_main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 55px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dAbout1 {
+    background-color: rgb(23, 23, 23);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 800px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.WhoAmI {
+    font-size: clamp(24px, 4vw, 30px);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pDes, .pDes1 {
+    font-size: clamp(14px, 2vw, 17.9px);
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.profile {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: 10vw;    
+    margin-top: 3.5vw;
+    animation: flipInY 1.5s ease-in-out;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.profile:hover{
+    transform: scale(1.23);
+}
+
+.imgP {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.technical, .certifications, .leadership, .soft, .Langu{
+    font-size: clamp(24px, 4vw, 30px);
+    font-weight: bold;
+    margin: 60px 20px 30px;
+    text-align: center;
+}
+
+.skills_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.programming, .databases, .cloud, .web {
+    background-color: rgb(24, 24, 24);
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 16px;
+    padding: 30px;
+    transition: transform 0.6s ease;
+}
+
+.programming:hover, .databases:hover, .cloud:hover, .web:hover {
+    transform: scale(1.04);
+}
+
+.programming p, .databases p, .cloud p, .web p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(229, 228, 228);
+}
+
+.skillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills_table {
+    width: 100%;
+    border-collapse: separate;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.tAdjust{
+    padding: 20px; 
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+
+.skills_table th {
+    background-color: rgb(46, 46, 46);
+    padding: 14px 20px;
+    text-align: left;
+    border: 1px solid rgb(77, 77, 77);
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.skills_table td {
+    padding: 12px 20px;
+    border: 1px solid rgb(55, 55, 55);
+    background-color: rgb(24, 24, 24);
+    color: rgb(200, 200, 200);
+}
+
+.skills_table tr:hover td {
+    background-color: rgb(36, 36, 36);
+    transition: background-color 0.3s ease;
+}
+
+.p1, .p2, .p3, .d1, .c1, .w1, .w2, .w3, .w4 {
+    background-color: rgb(46, 46, 46);
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.achievement_grid, .activity_grid, .soft_skills_grid, .language_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.achi1, .achi2, .achi3, .achi4, .acti1, .acti2, .soft1, .soft2, .soft3, .soft4, .langu1, .langu2 {
+    background-color: rgb(36, 35, 35);
+    border: 1px solid rgb(58, 57, 57);
+    border-radius: 12px;
+    padding: 20px;
+    color: rgb(205, 205, 205);
+    font-weight: 500;
+    transition: transform 0.6s ease;
+}
+
+.achi1:hover, .achi2:hover, .achi3:hover, .achi4:hover {
+    transform: translateY(-8px);
+}
+
+.acti1:hover, .acti2:hover {
+    transform: translateY(-8px);
+}
+
+/*projects.html(projects page) .........................................................*/
+.projectsHeader {
+    margin-top: 110px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pName {
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pDes3 {
+    color: rgb(197, 196, 196);
+    font-size: clamp(14px, 2vw, 19.6px);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.4;
+    margin-top: 7vh;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+    gap: 50px;
+    padding: 40px 20px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.srs, .game {
+    background-color: rgb(21, 21, 21);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 400px;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.srs:hover, .game:hover {
+    transform: translateY(-8px);
+}
+
+.srsP1, .gameP1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.srsD1, .gameD1 {
+    background-color: rgb(81, 79, 79);
+    border-radius: 16px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.srsP2, .gameP2 {
+    color: rgb(155, 149, 149);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.srsP3, .gameP3 {
+    color: rgb(166, 166, 166);
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.gameC {
+    background-color: rgb(52, 52, 52);
+    border-radius: 16px;
+    padding: 8px 20px;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.projectLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    margin-top: auto;
+    transition: transform 0.5s ease;
+}
+
+.projectLink:hover {
+    transform: scale(1.09);
+}
+
+.srsImg, .gameImg {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.srsP4, .gameP4 {
+    font-size: 17px;
+}
+
+/*contact.html(contact page) .......................................................*/
+.contactHeader {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contacth {
+    font-size: clamp(36px, 6vw, 58px);
+    margin-bottom: 20px;
+}
+
+.contactde {
+    color: rgb(172, 169, 169);
+    font-size: clamp(16px, 2vw, 22px);
+}
+
+.youtext {
+    display: block;
+    margin-top: 5px;
+}
+
+.contact_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.contact_section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.divF1, .divF2, .divF3, .divF4 {
+    margin-bottom: 30px;
+}
+
+.divF1 label, .divF2 label, .divF3 label, .divF4 label {
+    color: rgb(178, 176, 176);
+    font-size: 15px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.divF1 input, .divF2 input, .divF3 input, .divF4 input {
+    width: 100%;
+    height: 57px;
+    border-radius: 16px;
+    border: 1px solid rgb(79, 79, 79);
+    background-color: rgb(31, 30, 30);
+    font-size: 16px;
+    color: white;
+    padding: 0 25px;
+    font-family: 'Inter', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.divF1 input:hover, .divF2 input:hover, .divF3 input:hover, .divF4 input:hover {
+    transform: scale(1.02);
+}
+
+.btn {
+    background-color: white;
+    width: 100%;
+    height: 57px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.contactInfoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.condiv {
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 16px;
+    padding: 40px 30px;
+}
+
+.coninfo {
+    font-size: clamp(24px, 4vw, 29px);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.div1, .div2, .div3, .div4 {
+    background-color: rgb(63, 62, 62);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.5s ease;
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover {
+    transform: translateX(13px);
+    filter: brightness(1.2);
+}
+
+.imgMail, .imgPhone, .imgGitHub1 {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0.9);
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-left: 0.7vw;
+}
+
+.imgLinkedIn {
+    width: 44px;
+    height: 44px;
+}
+
+.pMail, .pPhone, .pLinked, .pGit {
+    font-size: 16px;
+}
+
+.pMail span, .pPhone span, .pLinked span, .pGit span {
+    color: rgb(177, 170, 170);
+    font-size: 14.8px;
+    display: block;
+    margin-bottom: -15px;
+}
+
+.pMail a, .pPhone a, .pLinked a, .pGit a {
+    color: white;
+    text-decoration: none;
+    word-break: break-word;
+    margin-bottom: 6vh;
+}
+
+.divFinal {
+    background-color: rgb(33, 33, 33);
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 16px;
+    padding: 40px 30px;
+}
+
+.spanC1 {
+    font-size: clamp(20px, 4vw, 26px);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.spanC2 {
+    font-size: clamp(14px, 2vw, 16px);
+    color: rgb(192, 191, 191);
+    line-height: 1.6;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.status_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.divSk1, .divSk2, .divSk3 {
+    background-color: rgb(92, 90, 90);
+    color: white;
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.copyright{
+    text-align: center;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    padding: 30px 20px 10px;
+    border-top: 1px solid rgb(40, 40, 40);
+    margin-top: 40px;
+}
+
+/*media queries for devices .........................................................*/ 
+
+/* for tablets*/
+@media screen and (max-width: 1024px) {
+    .upperdiv {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cstag {
+        position: static;
+        margin-bottom: 10px;
+    }
+    
+    .menu {
+        gap: 15px;
+    }
+    
+    .social_links {
+        gap: 25px;
+    }
+}
+
+/*mobiles*/
+@media screen and (max-width: 768px) {
+    .upperdiv {
+        padding: 15px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .menu li {
+        font-size: 14px;
+    }
+    
+    .dtalk {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    .myContent{
+        margin-top: 180px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .db1, .db2 {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .social_links {
+        gap: 20px;
+    }
+    
+    .about_main {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;  
+    }
+    
+    .dAbout1 {
+        padding: 25px;
+        width: 100%;
+    }
+    
+    .profile {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;           
+        margin-bottom: 30px;      
+        margin-top:13vh;
+        position: relative;  
+    }
+    
+    .skills_grid, .achievement_grid, .activity_grid, .soft_skills_grid, .language_grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects_grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact_content{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .div1,.div2, .div3, .div4 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .div1:hover, .div2:hover, .div3:hover, .div4:hover {
+        transform: translateY(-8px);
+    }
+}
+
+/*small screen mobiles ...................................................................*/
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .upperdiv {
+        border-radius: 12px;
+    }
+    
+    .name {
+        font-size: 32px;
+    }
+    
+    .tagline {
+        font-size: 18px;
+    }
+    
+    .details {
+        font-size: 14px;
+    }
+    
+    .cta-buttons {
+        gap: 15px;
+    }
+    
+    .db1, .db2 {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+    
+    .social_links {
+        gap: 15px;
+    }
+    
+    .githubl, .outimg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .lindiv {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dAbout1 {
+        padding: 20px;
+    }
+    
+    .condiv, .divFinal {
+        padding: 25px 20px;
+    }
+    
+    .status_tags {
+        justify-content: center;
+    }
+}
+
+/*lanscape type .........................................................................*/
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .myContent{
+        margin-top: 120px;
+    }
+    
+    .name {
+        font-size: 48px;
+    }
+}
+
+/* animation parts .......................................................................*/
+@keyframes flipInY {
+    0% {
+        transform: perspective(600px) rotateY(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(600px) rotateY(-20deg);
+        opacity: 1;
+    }
+    60% {
+        transform: perspective(600px) rotateY(10deg);
+    }
+    80% {
+        transform: perspective(600px) rotateY(-5deg);
+    }
+    100% {
+        transform: perspective(600px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
