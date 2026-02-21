@@ -94,6 +94,9 @@ nav a.active {
     white-space: nowrap;
     margin-right: 15px;
 }
+header a{
+    text-decoration:none;
+}
 
 .dtalk:hover {
     transform: scale(1.04);
